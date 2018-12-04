@@ -1,0 +1,365 @@
+<div class="parallax"></div>
+<div class="searchBox">
+  <div class="container">
+    <form class=" form-group" style="padding-top:2%;padding-bottom: 1%">
+      <div class="row input-group">
+        <div class="form-group col-3">
+            <label class="label-search" >Search By Budget</label>
+            
+            
+          </div>
+          <div class="form-group col-3">
+            
+            <input type="text" [(ngModel)]="from"  [ngModelOptions]="{standalone:
+              true}" placeholder="From  Eg.799" class="form-control">
+          </div>
+          <div class="form-group col-3 ">
+            <input type="text" [(ngModel)]="to" [ngModelOptions]="{standalone:
+              true}" placeholder="To Eg. 1999" class="form-control" >
+          </div>
+          <div class="form-group col-2">
+             
+          <button type="submit" style="width: 100%;vertical-align: bottom;" (click)="searchResort()" class="btn btn-search">Submit</button>
+         
+        </div>
+        
+        
+        </div>
+        <div class="row">
+          <div class="col-lg-6 row">
+            <div class="col-lg-6">
+                <div class="checkbox" >
+                    
+                    <a href="#demo" data-toggle="collapse">Add Filter</a>
+                  </div>
+               </div>
+               <div class="col-lg-6" style="color: white">
+                  <input type="checkbox"  (change)="showFeatured=!showFeatured"> &nbsp; Clear Filter
+                  
+               </div>
+          </div>
+          <div id="demo" class="collapse container">
+            <div  class="container row">
+                <div class="checkbox col-lg-6" style="color: white">
+                    <input type="checkbox"  (change)="breakfast=!breakfast"> &nbsp; Add Breakfast
+                            
+                  </div>
+              <div class="checkbox col-lg-6" style="color: white">
+                  <input type="checkbox"  (change)="dinner=!dinner"> &nbsp; Add Dinner
+              </div>
+              <div class="checkbox col-lg-6" style="color: white">
+                  <input type="checkbox"  (change)="stayPackage=!stayPackage"> &nbsp; Add Stay Package
+                  
+              </div>
+              <div class="checkbox col-lg-6" style="color: white">
+                  <input type="checkbox"  (change)="teamBuilding=!teamBuilding"> &nbsp; Add Team Building Activities
+                    
+              </div>
+              <div class="checkbox col-lg-6" style="color: white">
+                  <input type="checkbox"  (change)="transportation=!transportation"> &nbsp; Add Transportation
+                      
+              </div>
+              <div class="checkbox col-lg-6" style="color: white">
+                  <input type="checkbox"  (change)="rnrActivity=!rnrActivity"> &nbsp; Add RNR Activites
+                        
+              </div>
+              <div class="checkbox col-lg-6" style="color: white">
+                  <input type="checkbox"  (change)="photographer=!photographer"> &nbsp; Add Photographer
+                          
+              </div>
+              
+            </div>
+              </div>
+        </div>
+    </form>
+  </div>
+</div>
+<div [hidden]="showFeatured" class="resortList container">
+  <h1 class="label-resort" style="font-size: 36px;color:#333333">Featured Resorts</h1>
+  <h1 class="label-resort" style="font-size: 14px; color:#7a7a7a;font-weight: 500">Explore the unseen!</h1>
+ <div class="row">
+  
+      <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+        <div class="border">
+          <img class="card-img-top" width= "430" height="240"  src="http://www.thewildfire.in/wp-content/uploads/2018/08/k-768x512.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Kheeda Resort</h4>
+            <p class="card-text">Resort.</p>
+            <div class="row"><del>1299</del>&nbsp;<p class="price">1049</p></div>
+          </div>
+        </div>
+        </div>
+       
+ 
+  
+        <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+            <div class="border">
+              <img class="card-img-top" width= "430" height="240"  src="http://www.thewildfire.in/wp-content/uploads/2018/08/gardq-768x432.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">The Garden Asia  </h4>
+                <p class="card-text">Resort.</p>
+                <div class="row"><del>1299</del>&nbsp;<p class="price">1049</p></div>
+              </div>
+            </div>
+            </div>
+  
+  
+            <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+                <div class="border">
+                  <img class="card-img-top" width= "430" height="240" src="http://www.thewildfire.in/wp-content/uploads/2018/07/1-4-768x440.png" alt="Card image">
+                  <div class="card-body">
+                    <h4 class="card-title">Signature Club Resort</h4>
+                    <p class="card-text">Resort</p>
+                    <div class="row"><del>1899</del>&nbsp;<p class="price">1499</p></div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+                    <div class="border">
+                      <img class="card-img-top" width= "430" height="240"  src="http://www.thewildfire.in/wp-content/uploads/2018/07/7-768x523.jpg" alt="Card image">
+                      <div class="card-body">
+                        <h4 class="card-title">Windflower</h4>
+                        <p class="card-text">Resort.</p>
+                        <div class="row"><del>1899</del>&nbsp;<p class="price">1499</p></div>
+                      </div>
+                    </div>
+                    </div>
+         
+   
+    
+                    <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+                        <div class="border">
+                          <img class="card-img-top" width= "430" height="240" src="http://www.thewildfire.in/wp-content/uploads/2018/07/7-3.png" alt="Card image">
+                          <div class="card-body">
+                            <h4 class="card-title">Lords Park</h4>
+                            <p class="card-text">Resort.</p>
+                            <div class="row"><del>1299</del>&nbsp;<p class="price">1049</p></div>
+                          </div>
+                        </div>
+                        </div>
+    
+    
+                        <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+                            <div class="border">
+                              <img class="card-img-top" width= "430" height="240" src="http://www.thewildfire.in/wp-content/uploads/2018/07/1-1-768x537.png" alt="Card image">
+                              <div class="card-body">
+                                <h4 class="card-title">Urban valley</h4>
+                                <p class="card-text">Resort</p>
+                                <div class="row"><del>1399</del>&nbsp;<p class="price">1199</p></div>
+                              </div>
+                            </div>
+                            </div>
+
+    
+
+</div>
+</div>
+<div [hidden]="!showFeatured" class="resortList container">
+    <h1 class="label-resort" style="font-size: 36px;color:#333333">Search Results...</h1>
+    <h1 class="label-resort" style="font-size: 14px; color:#7a7a7a;font-weight: 500"></h1>
+   <div class="row">
+
+    
+    
+        <div *ngFor='let resort of resortList' class="card col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" >
+          <div class="border">
+            <img class="card-img-top" width= "430" height="240"  src="{{resort.url}}">
+            <div class="card-body">
+              <h4 class="card-title">{{resort.name}}</h4>
+              <p class="card-text">Resort.</p>
+              <div class="row"><p class="price">{{resort.total}}</p></div>
+            </div>
+          </div>
+          </div>
+        
+         
+   
+  
+      
+  
+  </div>
+  </div>
+
+<div class="destination">
+  <div class="container" style="padding-top:5%">
+      <h1>Travel Destinations</h1>
+      <p >Expand your Horizon! Make new Friends! Free your Soul! Enjoy the Wildness! Discover your Oasis!</p>
+      <p>“The most beautiful in the world is, of course, the world itself.” – Wallace Stevens</p>
+      <p>“Go, fly, roam, travel, voyage, explore, journey, discover, adventure.”</p>
+
+      <div class="row container">
+        <a href="#">Kodaikanal(1)</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">Kerala(4)</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">Bangalore(20) </a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">Ooty(4) </a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">Chennai(6)</a> &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+
+      <div class="row " style="padding-top:5%">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 flip-box" >
+              <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                <img class="card-img-top" width= "430" height="240" src="http://www.thewildfire.in/wp-content/uploads/2018/05/COORG-768x359.jpg" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Coorg</h4>
+                </div>
+                </div>
+                <div class="flip-box-back ">
+                    <p>History The Kodavas were the earliest inhabitants and agriculturists in Kodagu, having lived there for centuries. Being a warrior community as well, they carried arms during times of war and had their own chieftains. The Haleri dynasty, an offshoot of the Keladi Nayakas, ruled Kodagu between 1600 and 1834. Later the British ruled Kodagu from</p>
+                  </div>
+              </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 flip-box" >
+                  <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                    <img class="card-img-top" width= "430" height="240" src="http://www.thewildfire.in/wp-content/uploads/2018/05/Mysore-Palace-768x576.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Mysore</h4>
+                    </div>
+                  </div>
+                  <div class="flip-box-back">
+                      <h2>Back Side</h2>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 flip-box" >
+                      <div class="flip-box-inner">
+                          <div class="flip-box-front">
+                        <img class="card-img-top" width= "430" height="240" src="http://www.thewildfire.in/wp-content/uploads/2018/05/qwertyuiop-768x483.jpg" alt="Card image">
+                        <div class="card-body">
+                          <h4 class="card-title">Chennai</h4>
+                        </div>
+                      </div>
+                      <div class="flip-box-back">
+                          <h2>Back Side</h2>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 flip-box" >
+                          <div class="flip-box-inner">
+                            <img class="card-img-top" width= "430" height="240" src="http://www.thewildfire.in/wp-content/uploads/2018/05/Resorts-in-ooty-2-768x358.jpg" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Ooty</h4>
+                            </div>
+                            
+                          </div>
+                          </div>
+              
+
+      </div>
+      
+  </div>
+    
+
+  </div>
+<div class="container travelContainer">
+  <h2> Why Travel with WildFire? </h2>
+  <div class="row" style="padding-top: 5%">
+      <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+          <div >
+            <img    src="http://www.thewildfire.in/wp-content/uploads/2018/03/why-us-save-money.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Cost Effectiveness</h4>
+              <p class="card-text">Our event services are cost effective, we work with companies to help them plan and meet their event budget expectations.</p>
+            </div>
+          </div>
+          </div>
+          <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+              <div >
+                <img    src="http://www.thewildfire.in/wp-content/uploads/2018/03/get-help.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Value</h4>
+                  <p class="card-text">Maximize your ROE (return on event) by leveraging our expertise to save time, money and stress, all while putting on an amazing event.</p>
+                </div>
+              </div>
+              </div><div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+                  <div >
+                    <img    src="http://www.thewildfire.in/wp-content/uploads/2018/03/stay-safe.png" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Connections</h4>
+                      <p class="card-text">We are locked and loaded with a network of preferred vendor partners to offer you a wide range of choice.</p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+                      <div >
+                        <img    src="http://www.thewildfire.in/wp-content/uploads/2018/03/why-us-save-money.png" alt="Card image">
+                        <div class="card-body">
+                          <h4 class="card-title">Customization</h4>
+                          <p class="card-text">Pick what you need, our experiences and events are fully customisable to cater to your needs.</p>
+                        </div>
+                      </div>
+                      </div>
+                  <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+                      <div >
+                        <img    src="http://www.thewildfire.in/wp-content/uploads/2018/03/get-help.png" alt="Card image">
+                        <div class="card-body">
+                          <h4 class="card-title">Less Stress!</h4>
+                          <p class="card-text">With a multitude of intricate details to keep up with, you can rest assured knowing we have it all under control for you.</p>
+                        </div>
+                      </div>
+                      </div><div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+                          <div >
+                            <img    src="http://www.thewildfire.in/wp-content/uploads/2018/03/stay-safe.png" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Details, Details, Details!</h4>
+                              <p class="card-text">Planning a successful event requires a thorough knowledge of all the details involved. It is easy for things to slip through the cracks with lack of experience.</p>
+                            </div>
+                          </div>
+                          </div>
+  </div>
+
+</div>
+<div class=" registerContainer" >
+  <div class="container ">
+  <h1>Register to get alerts for best deals!</h1>
+  <div class="form-group" style="padding-top:3%">
+  <input class="form-control" type="text" placeholder="Enter your Email">
+  <button type="submit" style="margin-top:5%;padding-left:5%;padding-right: 5%;" class="btn btn-search">I'm In</button>
+</div>
+</div>
+
+</div>
+
+<div class="travelContainer">
+  <div class="container">
+    <h2>Travel Tips</h2>
+    <p>Checkout latest news and articles from our blog</p>
+    <div class="row">
+        <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+            <div class="border">
+              <img class="card-img-top" width= "430" height="240"  src="http://www.thewildfire.in/wp-content/uploads/2018/03/Chennai.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Places to visit in Chennai</h4>
+                <p class="card-text">Resort.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+        </div>
+        <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+            <div class="border">
+              <img class="card-img-top" width= "430" height="240"  src="http://www.thewildfire.in/wp-content/uploads/2018/03/palace1.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Places to visit in Mysore</h4>
+                <p class="card-text">Resort.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+        </div>
+        <div class="card col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12" >
+            <div class="border">
+              <img class="card-img-top" width= "430" height="240"  src="http://www.thewildfire.in/wp-content/uploads/2018/04/dubari-768x512.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Places to visit in Coorg</h4>
+                <p class="card-text">Resort.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+</div>

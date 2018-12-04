@@ -1,0 +1,11 @@
+nav{
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: none;
+    color: black !important;
+    padding: 0;
+}
+.nav-link{
+    color:black;
+}

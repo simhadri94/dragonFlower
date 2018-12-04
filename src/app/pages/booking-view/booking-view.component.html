@@ -1,0 +1,29 @@
+<mat-vertical-stepper  #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+          <ng-template matStepLabel>Enter Personal Details</ng-template>
+          <div class="form-group queryForm" >
+            <label>Full Name</label>
+            <input class="form-control" type="text" placeholder="Your Name">
+            <label>Your Email</label>
+            <input class="form-control" type="text" placeholder="email@domain.com">
+            
+
+        </div>
+   </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+          <ng-template matStepLabel>Booking Details</ng-template>
+          <div class="form-group queryForm" >
+            <label>PickUp Date</label>
+            <input class="form-control" type="text" placeholder="Dates">
+            <label>Head Count</label>
+            <input class="form-control" type="text" placeholder="Count">
+
+        </div>
+    </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Select Pakage</ng-template>
+    You are now done.
+    
+  </mat-step>
+ 
+</mat-vertical-stepper>

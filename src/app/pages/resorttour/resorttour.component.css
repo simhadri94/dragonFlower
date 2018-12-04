@@ -1,0 +1,186 @@
+.parallax {
+    /* The image used */
+    background-image: url(http://www.thewildfire.in/wp-content/uploads/2018/07/ts1-1024x683.jpeg);
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color:#fff;
+    padding-top: 1%;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.resortName{
+    font-weight: 800;
+}
+
+.rating{
+    font-size: 16px;
+    font-weight:400;
+}
+
+.tour-nav{
+    cursor: pointer;
+    font:Arial,sans-serif;
+}
+ .tour-nav:hover,.tour-nav:active {
+     border-bottom: 2px solid!important;
+     border-bottom-color: #ec5849 !important;
+     
+    
+}
+
+.tour-nav .rating{
+    font-weight: 500;
+}
+.tour-nav:hover .rating{
+    font-weight: 700;
+}
+
+.scrollBody{
+    height: 100vh; position: sticky;overflow-y: auto
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ec5849; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #df5445; 
+}
+
+.priceCard{
+    border-top: 1px solid;
+    border-top-color: #03ab96;
+}
+
+.tour-sale-rate {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15%;
+    height: 70%;
+    /* background-color: #03ab96; */
+    /* border-left: transparent */
+}
+.tour-sale-rate span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 4px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin: center center;
+}
+
+.tour-sale-rate:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 57px solid #03ab96;
+    border-left: 57px solid transparent;
+}
+
+.previousPrice{
+    font-size:16px;
+    color:#ec5849;
+    text-decoration-line: line-through
+}
+
+.currentPrice{
+    font-size:22px;
+    color:#ec5849;
+    font-weight: 700;
+}
+
+.queryForm{
+    padding:5%;
+    padding-top:5%;
+    padding-bottom:5%;
+
+}
+
+.queryForm label{
+ font-size: 14px;
+ font-weight: 700;
+}
+
+.queryForm input{
+    border-radius: 10px
+}
+
+.queryForm input::placeholder{
+    font-size:14px;
+    font-weight: 400;
+}
+
+.detailContainer{
+    text-align: center;
+    padding:5%;
+}
+
+.detailContainer p{
+    font-size: 14px;
+    padding: 1%;
+    margin:0px;
+}
+
+.detailContainer .btn-primary{
+
+    font-weight: 900;
+    color:white;
+    border-radius: 15px;
+    background-color: #ec5849;
+    width:100%;
+    -moz-user-focus: ignore;
+    border:none;
+}
+
+.customerSupportContainer{
+    padding-top:15%;
+    padding: 5%;
+    text-align: center
+
+}
+
+.customerSupportContainer h1{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.customerSupportContainer p{
+    font-size: 14px;
+    padding: 1%;
+    margin:0px;
+}

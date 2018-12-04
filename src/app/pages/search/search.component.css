@@ -1,0 +1,185 @@
+.parallax {
+    /* The image used */
+    background-image: url(http://www.thewildfire.in/wp-content/uploads/2018/07/ts1-1024x683.jpeg);
+
+    /* Set a specific height */
+    min-height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.searchBox{
+    background-color: #0d3d62;
+}
+
+.searchBox input{
+    color:white;
+}
+
+.form-control{
+    border-radius: 5px;
+    border:none;
+    background-color: #0c3555;
+}
+.label-search{
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color:white;
+    display: block;
+    line-height: 1.2em;
+    text-transform: none;
+}
+
+.btn-search{
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ec5849
+}
+
+.resortList{
+    text-align: center;
+    padding-top: 2%
+}
+
+.label-resort{
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-weight: 750;
+    font-size: 20px;
+    color:black;
+    display: block;
+    line-height: 1.2em;
+    text-transform: none;
+}
+
+.card{
+    margin : 0px;
+    border : none;
+    margin-bottom: 1%;
+}
+
+.border{
+    border: 3px solid;
+    overflow: hidden;
+    text-align:left;
+}
+
+.border:hover{
+    box-shadow: 5px 5px 5px rgb(189, 189, 189);
+}
+
+.card-img-top {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+
+  .card-img-top:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .destination{
+      background-image: url('../../../assets/images/best_destinations_in_the_world-wallpaper-1920x1200.jpg');
+    width: 100%;
+    height: 100%;
+    }
+
+    .destination p{
+        color:rgb(255, 255, 255);
+        font-size: 14px;
+    }
+
+    .destination h1{
+        color:black;
+    }
+
+    .destination .row a{
+        color:white;
+    }
+
+    .flip-box {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid #f1f1f1; */
+        perspective: 1000px;
+      }
+      
+      .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      .flip-box-front {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      .flip-box-back {
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+  .travelContainer{
+      padding-top:5%;
+      text-align:center;
+  }    
+  .travelContainer h2{
+      font-size: 30px;
+      font-weight: 900;
+  }
+
+  .registerContainer{
+      padding-top:5%;
+      text-align: center;
+      background-image: url('../../../assets/images/Mountain-Dark-Nature-HD-Wallpaper.jpg');
+      padding-bottom: 3%;
+      
+  }
+
+  .registerContainer h1{
+      color:white;
+      font-size: 36;
+      font-weight: 900;
+      
+  }
+
+  .registerContainer .form-control{
+      background-color: transparent;
+      border: none;
+      -moz-user-focus: ignore;
+      border-bottom: 1px solid white;
+  }
+
+  .registerContainer input::placeholder {
+      text-align: center;
+      color:white !important;
+      font-weight: 700;
+      max-width: 60%;
+      font-size: 20px;
+  }
+
+  .price{
+      font-size:18px;
+      font-weight:900;
+  }

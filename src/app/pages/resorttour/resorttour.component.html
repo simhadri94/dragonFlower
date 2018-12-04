@@ -1,0 +1,249 @@
+<div class="parallax" #target style="background-image: url(http://www.thewildfire.in/wp-content/uploads/2018/08/gardq.jpg);background-color: #d8d8d8">
+
+</div>
+<div class="sticky" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+            <h2 class="resortName">Khedda Resorts</h2>
+            </div>
+            <div class="col-lg-6 row">
+            <div class="col-lg-3 " (click)="scroll(target)">
+                <div class="tour-nav">
+                <p class="rating active">Main Information</p>
+            </div>
+            </div>
+            <div class="col-lg-3 tour-nav">
+                <p class="rating">Itinerary</p>
+            </div>
+            <div class="col-lg-3 tour-nav">
+                <p class="rating">Map</p>
+            </div>
+            <div class="col-lg-3 tour-nav">
+                <p class="rating">Reviews</p>
+            </div>
+            </div>
+        </div>
+            
+            <p class="rating">5 reviews</p>
+    </div>
+</div>
+<div style="background-color:#f6f6f6;">
+<div class="container-fluid" style="max-width:92%">
+<div class="row" >
+    <div class="col-12 col-lg-8 col-md-8 col-sm-12 scrollBody">
+        <div class="row" style="padding:5%">
+            <div class="col-lg-3 card-body" style="background-color:white">
+                <span>6 days</span>
+            </div>
+            <div class="col-lg-3 card-body" style="background-color:white">
+                <span>2018/09/16</span>
+            </div>
+            <div class="col-lg-3 card-body" style="background-color:white">
+                <span>Availability:30</span>
+            </div>
+            <div class="col-lg-3 card-body" style="background-color:white">
+                <span>Age : 12</span>
+            </div>
+        </div>
+        <div class="card" style="border:0px;">
+            <div class="card-header" style="background-color:white;border:0px;border-left: 3px solid #ec5849">
+                <h2>Main Info</h2>
+            </div>
+            <div class="card-body">
+                <div class="container">
+                    <p>
+                            Khedda Resort is located off Kanakapura Main Road, traditionally decorated with high standards. The resort is ideally located within the city limits yet away from the chaos of the city life. It is about an hour’s drive from new airport and Whitefield. Spread across 20 acres of land with a natural spring flowing through the resort, a weekend getaway for the whole family to rediscover the joys of nature. Enjoy Bangalore’s blessed weather without having to bear the traffic and chaos of the city life.
+                    </p>
+                    <!-- <table class="table table-bordered" style="width:100%">
+                        <tr><td>Date</td><td>	15th September</td></tr>
+                        <tr><td>Packages</td><td>Exclusive<br>
+                                Special<br>
+                                Premium</td></tr>
+                        <tr><td>Exclusive (INR 1299 )(Offer INR 1049 )</td><td>√ Break fast<br>
+
+                                √ Buffet Lunch<br>
+                                
+                                × Buffet Dinner<br>
+                                
+                                × Stay room</td></tr>
+                        <tr><td>Special ((INR 1499)  (Offer INR 1299)</td><td>√ Buffet Lunch<br>
+
+                                √ Buffet Dinner<br>
+                                
+                                × Breakfast<br>
+                                
+                                × Stay room</td></tr>
+                        <tr><td>Premium ((INR 3000 )  (Offer INR 2499)</td><td>√ Breakfast<br>
+
+                                √ Buffet Lunch<br>
+                                
+                                √ Buffet Dinner<br>
+                                
+                                √ Stay room</td></tr>
+
+                    </table> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card" style="border:0px;">
+                <div class="card-header" style="background-color:white;border:0px;border-left: 3px solid #ec5849">
+                    <h2>Itinerary</h2>
+                </div>
+                <div class="card-body">
+                    <div class="container">
+                            <mat-vertical-stepper  #stepper>
+                                    <mat-step [stepControl]="firstFormGroup">
+                                            <ng-template matStepLabel>Welcome Drinks</ng-template>
+                                        Test
+                                     </mat-step>
+                                    <mat-step [stepControl]="secondFormGroup">
+                                            <ng-template matStepLabel>Breakfast</ng-template>
+                                        <h6>Menu List</h6>
+                                        <ul>
+                                            <li>South Indian Food</li>
+                                            <li>Bread</li>
+                                            <li>Egg</li>
+                                            <li>Jam</li>
+                                            <li>Tea & coffee</li>
+                                            <li>Even North Indian like Aloo Paratha, Poha, Poori Baaji will be another option (need to inform us in advance).</li>
+                                        </ul>
+                                      </mat-step>
+                                    <mat-step>
+                                      <ng-template matStepLabel>Team Building Activities</ng-template>
+                                      You are now done.
+                                      
+                                    </mat-step>
+                                    <mat-step>
+                                            <ng-template matStepLabel>Buffet Lunch</ng-template>
+                                            You are now done.
+                                            
+                                    </mat-step>
+                                    <mat-step>
+                                        <ng-template matStepLabel>Indoor Games</ng-template>
+                                        You are now done.
+                                                
+                                    </mat-step>
+                                    <mat-step>
+                                       <ng-template matStepLabel>Outdoor Games</ng-template>
+                                        You are now done.
+                                                    
+                                    </mat-step>
+                                    <mat-step>
+                                        <ng-template matStepLabel>Rain Dance</ng-template>
+                                             You are now done.
+                                                         
+                                    </mat-step>
+                                    <mat-step>
+                                        <ng-template matStepLabel>Swimming pool</ng-template>
+                                                 You are now done.
+                                                             
+                                    </mat-step>
+                                  </mat-vertical-stepper>
+                                  
+                    </div>
+    
+                </div>
+    
+            </div>
+    </div>
+    <div class="col-12 col-lg-4 col-md-4 col-sm-12  scrollBody" style="background-color:white !important">
+            <div class="card priceCard" >
+                    <span class="tour-sale-rate"><span>-19.2%</span></span>
+                    <div class="card-body" >
+                        <div class="row" >
+                            <p style="color:grey;font-weight: 400">From:</p> &nbsp;&nbsp;
+                            <p class="previousPrice">Rs.1,299</p>&nbsp;&nbsp;
+                            <p class="currentPrice">Rs.1,049</p>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- <div class="form-group queryForm" >
+                      <label>Full Name</label>
+                      <input class="form-control" type="text" placeholder="Your Name">
+                      <label>Your Email</label>
+                      <input class="form-control" type="text" placeholder="email@domain.com">
+                      <label>PickUp Date</label>
+                      <input class="form-control" type="text" placeholder="Dates">
+                      <label>Head Count</label>
+                      <input class="form-control" type="text" placeholder="Count">
+
+                  </div> -->
+                  <table class="table table-bordered queryForm" style="width:100%">
+                    <tr><td>Date</td><td>	15th September</td></tr>
+                    <tr><td>Packages</td><td>Exclusive<br>
+                            Special<br>
+                            Premium</td></tr>
+                    <tr><td>Exclusive (INR 1299 )(Offer INR 1049 )</td><td>√ Break fast<br>
+
+                            √ Buffet Lunch<br>
+                            
+                            × Buffet Dinner<br>
+                            
+                            × Stay room</td></tr>
+                    <tr><td>Special ((INR 1499)  (Offer INR 1299)</td><td>√ Buffet Lunch<br>
+
+                            √ Buffet Dinner<br>
+                            
+                            × Breakfast<br>
+                            
+                            × Stay room</td></tr>
+                    <tr><td>Premium ((INR 3000 )  (Offer INR 2499)</td><td>√ Breakfast<br>
+
+                            √ Buffet Lunch<br>
+                            
+                            √ Buffet Dinner<br>
+                            
+                            √ Stay room</td></tr>
+
+                </table>
+                  <div class="detailContainer">
+                      <p>Free Cancellation before 7 days</p>
+                      <p>No Booking Fees</p>
+                      <p>Best Price Guaranteed</p>
+                      <p>Customer Delight</p>
+                      <br>
+                      <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Book This Tour</button>
+                  </div>
+                  <div class="customerSupportContainer">
+                        <h1>24/7 Customer Support</h1>
+                        <br>
+
+                        <p>+91 78922 00744</p>
+                        <p>Support@thewildfire.in</p>
+                        <p>08:00am ~ 07:30pm (Mon to Sat)</p>
+                  </div>
+    </div>
+ </div>
+</div>
+</div>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+       
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Book Tour</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <app-booking-view></app-booking-view>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
